@@ -1,18 +1,25 @@
 pipeline{
     agent any
     stages{
-        stage('Hello'){
+        stage('First'){
             steps{
                  sh'''
                      echo "Hello this is groovy..."
                  '''
              }
          }
-            stage('Bye'){
+            stage('Middle'){
                  steps{
                      sh'''
-                         echo "Final stage.."
+                         echo "Middle stage.."
                     '''
+            }
+        }
+        stage('Last'){
+            steps{
+                sh'''
+                    echo "This is Last Stage..."
+                '''
             }
         }
     }

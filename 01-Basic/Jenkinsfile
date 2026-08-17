@@ -8,10 +8,10 @@ pipeline{
                  '''
              }
          }
-            stage('Middle'){
+            stage('updated'){
                  steps{
                      sh'''
-                         echo "Middle stage.."
+                         echo "updtaed stage.."
                     '''
             }
         }

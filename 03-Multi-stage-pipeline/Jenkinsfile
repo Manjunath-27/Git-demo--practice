@@ -24,8 +24,8 @@ pipeline {
          stage('Deploying one more ENV'){
             stages {
                  stage('deploy to env') {
-                    stpes {
-                        sh 'echo "testing indev"'
+                    steps {
+                        sh 'echo "testing in dev"'
                     }
                 }
             }

@@ -1,15 +1,15 @@
-pipeline{
+pipeline {
     agent any
 
-    parameters{
+    parameters {
         string(name: "ENV',defaultvalue: 'prod',description: 'This is testing...")
     }
 
-    stages{
-        stage('Build-stage'){
-            stages{
-                stage('checking code'){
-                    steps{
+    stages {
+        stage('Build-stage') {
+            stages {
+                stage('checking code') {
+                    steps {
                         sh 'echo "Hello world"'
                     }
                 }
@@ -22,9 +22,9 @@ pipeline{
 
          }
          stage('Deploying one more ENV'){
-            stages{
-                 stage('deploy to env'){
-                    stpes{
+            stages {
+                 stage('deploy to env') {
+                    stpes {
                         sh 'echo "testing indev"'
                     }
                 }

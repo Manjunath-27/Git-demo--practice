@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git-Checkout'){
+            steps{
+                git url: 'https://github.com/Manjunath-27/Git-demo--practice.git', branch: 'production'
+            }
+        }
+    }
+}

@@ -23,6 +23,19 @@ pipeline{
                 echo "test"
             }
         }
-        
+
+        stage('Deploy test'){
+            stage('Test on Windows'){
+                agent any
+                steps{
+                    echo "Testing"
+                }
+            }
+            stage('Test on linux'){
+                stpes{
+                    echo "Test requires"
+                }
+            }
+        }
     }
 }

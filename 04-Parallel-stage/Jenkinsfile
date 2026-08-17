@@ -33,7 +33,7 @@ pipeline{
                      }
                 }
                 stage('Test on linux'){
-                    stpes{
+                    steps{
                         echo "Test requires"
                     }
                 }
